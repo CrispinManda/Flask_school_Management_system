@@ -1,0 +1,100 @@
+Project Title: School Website Application
+
+Objective:
+Develop a school website application using Flask that allows students, teachers, and admins to interact within the system. The application should include user authentication, course management, and a student-teacher interaction feature.
+
+Project Requirements:
+
+1. User Roles & Authentication:
+
+Implement user authentication using Flask-Login or Flask-Security.
+
+Three user roles: Admin, Teacher, and Student.
+
+Each user should have a profile page.
+
+2. Admin Functionalities:
+
+Register, update, and delete teachers and students.
+
+Create, update, and delete courses.
+
+Assign teachers to courses.
+
+3. Teacher Functionalities:
+
+View assigned courses.
+
+Manage course content (upload materials, add descriptions).
+
+View enrolled students.
+
+4. Student Functionalities:
+
+View available courses.
+
+Enroll in a course.
+
+Access course materials.
+
+5. Additional Features:
+
+User dashboard for role-based navigation.
+
+Responsive design using Bootstrap.
+
+Database integration using SQLite or PostgreSQL.
+
+Flash messaging for system notifications.
+
+Project Structure:
+
+1. Backend (Flask & SQLAlchemy):
+
+app.py (Main application file)
+
+models.py (Database models)
+
+routes.py (Route handling)
+
+forms.py (WTForms for user input)
+
+templates/ (HTML templates)
+
+static/ (CSS, JS, images)
+
+config.py (Configuration settings)
+
+2. Database Tables:
+
+Users (id, name, email, password, role)
+
+Courses (id, title, description, teacher_id)
+
+Enrollments (id, student_id, course_id)
+
+Evaluation Criteria:
+
+Proper implementation of authentication and authorization.
+
+Efficient database design and relationships.
+
+Clean and structured Flask project layout.
+
+Functional and user-friendly UI.
+
+Error handling and validation.
+
+Deployment readiness (Optional: Deploy on Render/Heroku).
+
+Bonus Features:
+
+Implement a discussion forum for courses.
+
+Add a grading system where teachers can grade students.
+
+Implement email notifications using Flask-Mail.
+
+Submission Guidelines:
+
+Submit the GitHub repository link.
