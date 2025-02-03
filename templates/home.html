@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- slide-show -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ url_for('static', filename='images/class-time.webp') }}" class="d-block w-100" alt="Image 1">
+        <div class="inner-text">
+          <h1>Shining Stars International</h1> <br><br>
+          <p>Strive To Achieve <br> <br>
+        Join us to enjoy the best school-experience you ever had.
+        </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{{ url_for('static', filename='images/kids-school.webp') }}" class="d-block w-100" alt="Image 2">
+        <div class="inner-text">
+            <h1>Shining Stars International</h1> <br><br>
+            <p>Strive To Achieve <br> <br>
+          Join us to enjoy the best school-experience you ever had.
+          </p>
+          </div>
+    </div>
+      <div class="carousel-item">
+        <img src="{{ url_for('static', filename='images/colours.avif') }}" class="d-block w-100" alt="Image 3">
+        <div class="inner-text">
+            <h1>Shining Stars International</h1> <br><br>
+            <p>Strive To Achieve <br> <br>
+          Join us to enjoy the best school-experience you ever had.
+          </p>
+          </div>
+    </div>
+    </div>
+  
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+  <div class="card-container">
+    <!-- Card 1 -->
+    <div class="card">
+        <h3>Numerous courses</h3>
+        <p>We have over 30 subjects been studied here at Shining Stars.</p>
+    </div>  
+    <div class="card">
+        <h3>Able teachers</h3>
+        <p>Our teachers are equiped accordingly to serve the students</p>
+    </div>
+    <div class="card">
+        <h3>Curriculum</h3>
+        <p>All our subjects offered at the school are certified by the Goverment</p>
+    </div>
+    <div class="card">
+        <h3>Co-curriculum</h3>
+        <p>Every student's talent is nurtured through various co-curriculum activities</p>
+    </div>
+   </div>
+    <div class="image-text-container">
+            <!-- Image on the left -->
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/class.jpg') }}" alt="Image">
+            </div>
+    
+            <!-- Text on the right -->
+            <div class="text-container">
+                <h2>About us:</h2>
+        <p>Being an international school we have branches all over the country.To enroll with us open our login page to register 
+            and become part of us.</p>
+            </div>
+    </div>
+    <h2 style="text-align: center;"><bold>Subjects Offered</bold></h2>
+    <div class="side-images">
+        <div class="img img1"><img src="{{ url_for('static', filename='images/math.avif') }}">
+            <div class="inner-text">
+                <p>Mathematics</p>
+        </div>
+        </div>
+        <div class="img img2"><img src="{{ url_for('static', filename='images/tech.avif') }}">
+            <div class="inner-text">
+                <p>Technology</p>
+        </div>
+        </div>
+        <div class="img img3"><img src="{{ url_for('static', filename='images/arts.webp') }}">
+            <div class="inner-text">
+                <p>Arts</p>
+        </div>
+        </div>
+        <div class="img img4"><img src="{{ url_for('static', filename='images/music.webp') }}">
+            <div class="inner-text">
+                <p>Music</p>
+        </div>
+        </div>
+    </div> <br> <br>  
+    <h2 style="text-align: center;">Our Tuitors</h2>
+    <div class="card-container">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/sample2.jpg') }}">
+            <p><bold>Charles Mbithe</bold></p>
+        </div>  
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/sample1.png') }}">
+            <p><bold>Alicia </bold></p>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/sample2.jpg') }}">
+            <p><bold>Fredrick </bold></p>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/sample1.png') }}">
+            <p><bold>Patience</bold></p>
+        </div>
+        </div>
+
+{%endblock%}
