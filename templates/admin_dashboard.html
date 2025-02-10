@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="sidebar">
+    <a class="nav-link" href="{{ url_for('home') }}">Home Page</a>
+    <a class="nav-link" href="{{ url_for('add_teacher') }}">Add teacher</a>
+    <a class="nav-link" href="{{ url_for('announcements')}}"> Announcements</a>
+</div>
+<div class="main-content">
+    <h1>Welcome!</h1>
+</div>
+{% endblock %}

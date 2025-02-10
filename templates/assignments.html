@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Assignments</h1>
+    <ul>
+        {% for assignment in assignments %}
+        <li>
+            <h3 class="announcement-title">{{ assignment[1] }}</h3>
+            <p class="announcement-content">{{ assignment[2] }}</p>
+            <small>Posted by: {{ assignment[3] }}</small>
+        </li>
+        {% endfor %}
+    </ul>
+{%endblock%}

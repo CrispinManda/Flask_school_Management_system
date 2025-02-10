@@ -1,0 +1,18 @@
+{%extends 'base.html' %}
+{% block content %}
+<main class="form-signin  m-auto" style="width: 400px; background-color:white; box-shadow: 6px 6px 4px 6px rgba(0, 0, 0, 0.1);">
+    <h1 style="color: black;"> Teacher Register</h1><br>
+<form method="POST" action="{{ url_for('add_teacher') }}">
+    <div class="form-floating">
+        <input type="number" class="form-control" id="floatingInput" name="teacher_id" required>
+        <label for="teacher_id">Teacher ID</label>
+    </div><br>
+    <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" name="password" required>
+        <label for="password">Password</label>
+    </div><br>
+
+    <button class="btn btn-primary w-100 py-2" type="submit">Add</button>
+</form>
+</main>
+{% endblock %}
